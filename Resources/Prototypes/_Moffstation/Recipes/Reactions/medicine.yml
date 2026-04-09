@@ -1,0 +1,23 @@
+- type:
+  id: Hydrine
+  reactants:
+    Ammonia:
+      amount: 1
+    Hydrogen:
+      amount: 3
+    Plasma:
+      amount: 1
+      catalyst: true
+  products:
+    Hydrine: 1
+
+- type: reaction
+  id: Sinistrin
+  reactants:
+    Nitrogen:
+      amount: 2
+    Plasma:
+      amount: 1
+      catalyst: true
+  products:
+    Sinistrin: 3

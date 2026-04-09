@@ -729,6 +729,20 @@
           factor: 6
         - !type:ModifyBloodLevel
           amount: 6
+          # Moffstation changes
+          conditions:
+          - !type:MetabolizerTypeCondition
+            type: [ Vox ]
+            inverted: true
+        - !type:HealthChange
+          conditions:
+          - !type:MetabolizerTypeCondition
+            type: [ Vox ]
+            inverted: false
+          damage:
+            types:
+              Poison: 1
+          # End Moff changes
 
 - type: reagent
   id: Siderlac
